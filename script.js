@@ -2,7 +2,7 @@ const cells = document.querySelectorAll(".cell");
 
 const statusText = document.getElementById("status");
 
-const restartBtn = document.getElementById(restart);
+const restartBtn = document.getElementById("restart");
 
 
 let currentPlayer = "X";
@@ -16,7 +16,7 @@ const winPatterns = [
     [1,4,7],
     [2,5,8],
     [0,4,8],
-    [2,4,8]
+    [2,4,6]
 ];
 
 cells.forEach(cell => {
@@ -75,4 +75,5 @@ function restartGame(){
     cells.forEach(cell => {
         cell.innerText="";
     });
+
 }
